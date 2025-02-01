@@ -25,17 +25,17 @@ img = Image.open("Diseases.png")
 st.image(img)
 
 #Main Page
-if(app_mode=="HOME"):
+if app_mode=="HOME":
     st.markdown("<h1 style='text-align: center;'>Plant Disease Detection System for Sustainable Agriculture", unsafe_allow_html=True)
     
 #Prediction Page
-elif(app_mode=="DISEASE RECOGNITION"):
+elif app_mode=="DISEASE RECOGNITION":
     st.header("Plant Disease Detection System for Sustainable Agriculture")
     test_image = st.file_uploader("Choose an Image:")
     if(st.button("Show Image")):
         st.image(test_image,width=4,use_column_width=True)
     #Predict button
-    if(st.button("Predict")):
+    if st.button("Predict"):
         st.snow()
         st.write("Our Prediction")
         result_index = model_prediction(test_image)
