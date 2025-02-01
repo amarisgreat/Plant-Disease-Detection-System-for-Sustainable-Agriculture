@@ -1,3 +1,5 @@
+"""Plant Disease Detection System using Streamlit and TensorFlow."""
+
 import streamlit as st
 import tensorflow as tf
 import numpy as np
