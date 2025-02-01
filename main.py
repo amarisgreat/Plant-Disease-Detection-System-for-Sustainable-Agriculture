@@ -1,5 +1,5 @@
 """Plant Disease Detection System using Streamlit and TensorFlow."""
-
+from PIL import Image
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -17,7 +17,7 @@ app_mode = st.sidebar.selectbox("Select Page",["HOME","DISEASE RECOGNITION"])
 #app_mode = st.sidebar.selectbox("Select Page",["Home"," ","Disease Recognition"])
 
 # import Image from pillow to open images
-from PIL import Image
+
 img = Image.open("Diseases.png")
 
 # display image using streamlit
