@@ -26,7 +26,11 @@ st.image(img)
 
 #Main Page
 if app_mode=="HOME":
-    st.markdown("<h1 style='text-align: center;'>Plant Disease Detection System for Sustainable Agriculture", unsafe_allow_html=True)
+    st.markdown(
+    "<h1 style='text-align: center;'>Plant Disease Detection System for Sustainable Agriculture</h1>",
+    unsafe_allow_html=True,
+)
+
     
 #Prediction Page
 elif app_mode=="DISEASE RECOGNITION" :
